@@ -9,8 +9,8 @@ urlpatterns = [
     path('api/v1/products/<int:pk>/', ProductDetailAPIView.as_view()),
 
     #Categories
-    path('api/v1/categorieslist/', CategoryListAPIView.as_view()),
-    path('api/v1/categorieslist/<int:pk>/', CategoryDetailAPIView.as_view()),
+    path('api/v1/categories/', CategoryListAPIView.as_view()),
+    path('api/v1/categories/<int:pk>/', CategoryDetailAPIView.as_view()),
 
     #CartProducts
     path('api/v1/cartproducts/', CartProductListAPIView.as_view()),
